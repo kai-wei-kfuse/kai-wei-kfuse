@@ -3,6 +3,10 @@ import numpy as np
 import sys
 
 sys.path.append('/xmnlp')
+sys.path.append('/onnxruntime')
+sys.path.append('/scikit-learn')
+sys.path.append('/numpy')
+sys.path.append('/tokenizers')
 
 import xmnlp
 #import xmnlp
@@ -11,7 +15,7 @@ from xmnlp.sv import SentenceVector
 
 
 def my_function():
-    xmnlp.set_model('\\xmnlp-onnx-models')
+    xmnlp.set_model('xmnlp-onnx-models/')
 
     #命令行读取文件路径
     #C:\\Users\\kai_wei\\Desktop\\text\\orig_0.8_del.txt
